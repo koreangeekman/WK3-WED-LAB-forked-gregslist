@@ -8,7 +8,7 @@ export const CarsView = `
       </section>
 
       <section class="row justify-content-center">
-        <div class="col-12 col-md-8 p-4">
+        <div class="col-12 col-md-8 p-4 carFormCard">
           <form onsubmit="app.CarsController.createCar(event)">
 
             <div class="mb-2">
