@@ -4,7 +4,7 @@ export const HomesView = `
 
         <!-- SECTION NEW HOME FORM -->
         <div class="col-12 col-md-8 p-3">
-          <form class="p-3 p-md-4 houseFormCard" onsubmit="app.HomesController.addHouse(event)">
+          <form class="p-3 p-md-4 formCard" onsubmit="app.HomesController.addHouse(event)">
             <p class="fs-3 fw-bold">New House Form</p>
             <span class="">
               <label for="year">Year:</label>

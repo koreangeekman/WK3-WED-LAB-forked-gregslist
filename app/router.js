@@ -27,6 +27,6 @@ export const router = [
   {
     path: '#/jobs',
     controller: JobsController,
-    view: null //JobsView
+    view: JobsView
   }
 ]

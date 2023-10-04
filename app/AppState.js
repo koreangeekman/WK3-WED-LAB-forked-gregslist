@@ -1,5 +1,6 @@
 import { Car } from "./models/Car.js"
 import { House } from "./models/House.js"
+import { Job } from "./models/Job.js"
 import { Value } from "./models/Value.js"
 import { EventEmitter } from "./utils/EventEmitter.js"
 import { isValidProp } from "./utils/IsValidProp.js"
@@ -26,7 +27,7 @@ class ObservableAppState extends EventEmitter {
   init() {
     this.cars = loadState('cars', [Car])
     this.houses = loadState('houses', [House])
-    // this.jobs = loadState('jobs', [Job])
+    this.jobs = loadState('jobs', [Job])
   }
 
 }
