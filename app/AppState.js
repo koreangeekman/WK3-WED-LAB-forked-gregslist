@@ -26,7 +26,7 @@ class ObservableAppState extends EventEmitter {
   init() {
     this.cars = loadState('cars', [Car])
     this.houses = loadState('houses', [House])
-
+    // this.jobs = loadState('jobs', [Job])
   }
 
 }

@@ -14,7 +14,7 @@ export class HomesController {
   constructor() {
     console.log('Homes Controller Loaded', AppState.houses)
     _drawHomes();
-    AppState.on(AppState.houses, _drawHomes())
+    AppState.on('houses', _drawHomes)
   }
 
   addHouse(event) { // form submission

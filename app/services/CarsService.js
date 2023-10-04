@@ -3,11 +3,11 @@ import { Car } from "../models/Car.js"
 import { saveState } from "../utils/Store.js";
 
 function _saveCars() {
-  // saveState('bananas', AppState.cars)
   saveState('cars', AppState.cars)
 }
 
 class CarsService {
+
   createCar(carData) {
     const newCar = new Car(carData)
     console.log('new car!', newCar);

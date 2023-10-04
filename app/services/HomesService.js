@@ -9,7 +9,7 @@ function _saveHomes() {
 class HomesService {
 
   addHouse(data) {
-    AppState.houses.push(new House(data))
+    AppState.houses.push(new House(data));
     _saveHomes();
     AppState.emit('houses');
   }
@@ -17,9 +17,9 @@ class HomesService {
   removeHouse(id) {
     const houseIndex = AppState.houses.findIndex(house => house.id == id);
     if (houseIndex == -1) {
-      throw new Error('House ID does not exist')
+      throw new Error('House ID does not exist');
     }
-    AppState.houses.splice(houseIndex, 1)
+    AppState.houses.splice(houseIndex, 1);
     _saveHomes();
     AppState.emit('houses');
   }

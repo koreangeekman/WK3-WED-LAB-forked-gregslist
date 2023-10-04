@@ -10,6 +10,7 @@ export class House {
     this.price = data.price
     this.description = data.description
     this.imgUrl = data.imgUrl
+    this.listedAt = data.listedAt ? new Date(data.listedAt).toLocaleString() : new Date().toLocaleString()
   }
 
   get houseCard() {
@@ -32,6 +33,7 @@ export class House {
               </div>
             </div>
             <p><b>Description</b>: ${this.description}</p>
+            <p class="text-secondary w-100 text-end"><small>Listed At: ${this.listedAt}</small></p>
           </div>
         </div>
     `
